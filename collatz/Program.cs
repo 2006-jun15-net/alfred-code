@@ -9,18 +9,17 @@ namespace collatz
             Console.WriteLine("Enter a number: ");
             String n = Console.ReadLine();
             int number = Convert.ToInt32(n);
-            int num = number;
-            while(num != 1)
+            while(number != 1)
             {
-                if(num % 2 == 0)
+                if(number % 2 == 0)
                 {
-                    num /= 2;
+                    number /= 2;
                 }
                 else
                 {
-                    num = (num*3) + 1;
+                    number = (number*3) + 1;
 
-                }Console.WriteLine(num);
+                }Console.WriteLine(number);
             }
 
            
