@@ -7,8 +7,10 @@ namespace moreCodingChallenges
     {
         static void Main(string[] args)
         {
-            int[] array = {3,6,9,1,35};
-            System.Console.WriteLine(maximumGap(array));
+            //int[] array = {3,6,9,1,35};
+            //System.Console.WriteLine(maximumGap(array));
+
+            System.Console.WriteLine(isPrime(-6));
             
             
         }
@@ -32,7 +34,7 @@ namespace moreCodingChallenges
                     }
                 }
             }
-            
+
             for(int i = 0; i < array.Length; i++)
             {
                 for(int j = i+1; j < array.Length; j++)
@@ -47,6 +49,35 @@ namespace moreCodingChallenges
                     }
                 }
             }return maxGap;
+        }
+
+        /// <summary>
+        /// checks if a number is a prime
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
+
+        static bool isPrime(int number)
+        {
+            if( number <= 1)
+            {
+                return false;
+            }
+            int Numfactors = 0;
+            for(int i = number; i >= 1; i--)
+            {
+                if(number % i == 0)
+                {
+                    Numfactors++;
+                    
+                } 
+
+            }
+             if(Numfactors == 2)
+                {
+                    return true;
+                }
+            return false;
         }
         
     }
