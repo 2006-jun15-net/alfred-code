@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PrimeCheck\PrimeCheck.csproj" />
+    <ProjectReference Include="..\MaximumGap\MaximumGap.csproj" />
   </ItemGroup>
 
 </Project>
