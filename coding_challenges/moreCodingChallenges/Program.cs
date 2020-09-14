@@ -1,5 +1,8 @@
 ﻿using System;
+using MaximumGap;
 using PrimeCheck;
+using AnagramCheck;
+using OccurenceArray;
 
 namespace moreCodingChallenges
 {
@@ -7,53 +10,37 @@ namespace moreCodingChallenges
     {
         static void Main(string[] args)
         {
-            //int[] array = {3,6,9,1,35};
-            //System.Console.WriteLine(maximumGap(array));
+            // int[] array = {3,6,9,1,35};
+            // Gap gap = new Gap();
+            // System.Console.WriteLine(gap.MaxGap(array));
 
-            IsPrime primeCheck = new IsPrime();
+            // //IsPrime primeCheck = new IsPrime();
+            //System.Console.WriteLine(primeCheck.isPrime(-2));
 
-            System.Console.WriteLine(primeCheck.isPrime(-2));
+            // AnagramCheck.Anagram anagram = new AnagramCheck.Anagram();
+            // string s1 = "bca";
+            // string s2 = "cba";
+            // System.Console.WriteLine(anagram.CheckAnagram(s1,s2));
+
+            Occurence occurence = new Occurence();
+            int[] array = {3,4,5,4,8,-1};
+            System.Console.WriteLine(occurence.FindFrequency(array,4));
+
+
+            
+
+            
+
+            
+
+            
+
 
             
             
         }
 
-        static int maximumGap(int[] array)
-        {
-            //sort the array first using selection sort
-            int temp = 0;
-            int maxGap =0;
-            for(int i = 0; i < array.Length; i++)
-            {
-                int max = i;
-                for(int j = i+1; j < array.Length; j++)
-                {
-                    if(array[max] > array[j])
-                    {
-                        temp = array[max];
-                        array[max] = array[j];
-                        array[j] = temp;
-                        
-                    }
-                }
-            }
-
-            for(int i = 0; i < array.Length; i++)
-            {
-                for(int j = i+1; j < array.Length; j++)
-                {
-                    if(j-i == 1)
-                    {
-                        int gap = array[j] - array[i];
-                        if(gap > maxGap)
-                        {
-                            maxGap = gap;
-                        }
-                    }
-                }
-            }return maxGap;
-        }
-
+        
         
        
     }
