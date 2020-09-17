@@ -3,6 +3,7 @@ using MaximumGap;
 using PrimeCheck;
 using AnagramCheck;
 using OccurenceArray;
+using PairSumProgram;
 
 namespace moreCodingChallenges
 {
@@ -22,11 +23,15 @@ namespace moreCodingChallenges
             // string s2 = "cba";
             // System.Console.WriteLine(anagram.CheckAnagram(s1,s2));
 
-            Occurence occurence = new Occurence();
-            int[] array = {3,4,5,4,8,-1};
-            System.Console.WriteLine(occurence.FindFrequency(array,4));
+            // Occurence occurence = new Occurence();
+            // int[] array = {3,4,5,4,8,-1};
+            // System.Console.WriteLine(occurence.FindFrequency(array,4));
 
+            FindPairSum findPair = new FindPairSum();
+            int[] array = {1,3,2,2};
+            System.Console.WriteLine(findPair.CountPairSum(array,4));
 
+            
             
 
             
