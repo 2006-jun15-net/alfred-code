@@ -4,6 +4,7 @@ using PrimeCheck;
 using AnagramCheck;
 using OccurenceArray;
 using PairSumProgram;
+using RemoveDuplicates;
 
 namespace moreCodingChallenges
 {
@@ -27,9 +28,13 @@ namespace moreCodingChallenges
             // int[] array = {3,4,5,4,8,-1};
             // System.Console.WriteLine(occurence.FindFrequency(array,4));
 
-            FindPairSum findPair = new FindPairSum();
-            int[] array = {1,3,2,2};
-            System.Console.WriteLine(findPair.CountPairSum(array,4));
+            // FindPairSum findPair = new FindPairSum();
+            // int[] array = {1,3,2,2};
+            // System.Console.WriteLine(findPair.CountPairSum(array,4));
+
+            StringDuplicate stringDuplicate = new StringDuplicate();
+            string str = "looooove";
+            System.Console.WriteLine(stringDuplicate.RemoveDuplicateString(str));
 
             
             
